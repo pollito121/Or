@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 18, 18, 18;
+  --background-end-rgb: 18, 18, 18;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.estado-aprobado {
+  color: #00ff00;
+}
+
+.estado-pendiente {
+  color: #ffff00;
+}
+
+.estado-rechazado {
+  color: #ff0000;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Estilos para el componente Select */
+.select-trigger {
+  background-color: white !important;
+  color: black !important;
+}
+
+.select-content {
+  background-color: white !important;
+  color: black !important;
+}
+
+.select-item {
+  color: black !important;
+}
+
+.select-item:hover {
+  background-color: #f0f0f0 !important;
+}
+
+.select-item[data-highlighted] {
+  background-color: #e0e0e0 !important;
+  color: black !important;
+}
+
